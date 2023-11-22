@@ -1,8 +1,8 @@
 # api_upload_flutter
 
-##php server code : 
 
-# Image Upload
+
+# Server code : 
 
 This code allows you to upload an image to the `image` directory.
 
