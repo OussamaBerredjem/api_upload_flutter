@@ -4,7 +4,7 @@
 
 # Server code : 
 
-This code allows you to upload an image to the `image` directory.
+This code allows you to upload an file to the `upload` directory.
 
 ```php
 <?php
