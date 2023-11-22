@@ -20,5 +20,3 @@ if(move_uploaded_file($_FILES['file']['tmp_name'], $file_path)) {
 
 ?>
 
-
-The code first defines a variable `$file_path` that stores the path to the `image` directory. Then, it concatenates the filename of the uploaded file to the `$file_path` variable to create the full path to the uploaded file. Finally, it uses the `move_uploaded_file()` function to move the uploaded file from its temporary location to the specified path. If the upload is successful, it prints "success"; otherwise, it prints "fail".
