@@ -1,16 +1,24 @@
 # api_upload_flutter
 
-A new Flutter project.
+##php server code : 
 
-## Getting Started
+# Image Upload
 
-This project is a starting point for a Flutter application.
+This code allows you to upload an image to the `image` directory.
 
-A few resources to get you started if this is your first Flutter project:
+```php
+<?php
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+$file_path = "image/";
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+$file_path = $file_path . basename( $_FILES['file']['name']);
+if(move_uploaded_file($_FILES['file']['tmp_name'], $file_path)) {
+    echo "success";
+} else{
+    echo "fail";
+}
+
+?>
+
+
+The code first defines a variable `$file_path` that stores the path to the `image` directory. Then, it concatenates the filename of the uploaded file to the `$file_path` variable to create the full path to the uploaded file. Finally, it uses the `move_uploaded_file()` function to move the uploaded file from its temporary location to the specified path. If the upload is successful, it prints "success"; otherwise, it prints "fail".
