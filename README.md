@@ -1,5 +1,5 @@
 # upload file to api in flutter
-## make sure to create folder `/image` 
+## make sure to create folder `/upload` 
 
 
 # Server code : 
